@@ -3,4 +3,4 @@
 - Ben Andrews
 - Kellyn Hartzler
 - Nathan Hoehndorf
-- Marie Viita
+- El Marie
