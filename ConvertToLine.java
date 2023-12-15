@@ -7,7 +7,7 @@ public class ConvertToLine {
 
         try {
             File file = new File("MIAMI.txt");
-            File out = new File("formatMIAMI.txt");
+            File out = new File("Albums/formatMIAMI.txt");
             Scanner input = new Scanner(file);
             FileWriter write = new FileWriter(out);
 
