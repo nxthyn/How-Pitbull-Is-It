@@ -8,7 +8,7 @@ def write_file(url1):
     r1 = requests.get(url1)
     soup1 = BeautifulSoup(r1.content, 'html.parser')
     s = soup1.find_all('div', class_="Lyrics__Container-sc-1ynbvzw-1 kUgSbL")
-    f = open("MIAMI.txt", "a")  # name of the text file changes manually for each album
+    f = open("Trackhouse.txt", "a")  # name of the text file changes manually for each album
     text = ""  # sets up empty string variable that lyrics will be appended to
     for txt in s:
         text += txt.get_text() + " "
@@ -18,7 +18,8 @@ def write_file(url1):
 
 
 # sets up get request and soup object
-r = requests.get("https://genius.com/albums/Pitbull/M-i-a-m-i")  # url changes manually depending on the album
+r = requests.get("https://genius.com/albums/Pitbull/Trackhouse")  # url changes manually depending
+# on the album
 soup = BeautifulSoup(r.content, 'html.parser')
 
 # finds all of the links for the songs in the album and calls write_file()
