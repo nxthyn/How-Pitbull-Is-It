@@ -3,7 +3,7 @@ import java.io.*;
 
 public class CountWords {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
 
         final File folder = new File("Albums");
 
@@ -24,10 +24,32 @@ public class CountWords {
         String word = scanner.next();
 
         int total = 0;
+        String mostAlbum;
+        int mostCount = 0;
 
-        for(File )
+        for(File album : albums) {
+            String albumName = album.getName();
+            int currCount = 0;
+            Scanner fileScanner = new Scanner(album);
+            while(fileScanner.hasNextLine()) {
+
+                if (fileScanner.nextLine().equals(word)) { currCount++; }
+
+            }
+
+            if (currCount > mostCount) {
+
+                mostCount = currCount;
+                mostAlbum = albumName;
+
+            }
+
+            total += currCount;
+
+        }
 
 
+        System.out.println("Amount mentioned: " + total);
 
 
 
