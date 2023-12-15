@@ -6,8 +6,8 @@ public class ConvertToLine {
     public static void main(String[] args) {
 
         try {
-            File file = new File("MIAMI.txt");
-            File out = new File("Albums/formatMIAMI.txt");
+            File file = new File("Armando.txt");
+            File out = new File("Albums/formatArmando.txt");
             Scanner input = new Scanner(file);
             FileWriter write = new FileWriter(out);
 
